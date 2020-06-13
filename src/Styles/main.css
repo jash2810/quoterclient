@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+:root {
+    --main-bg-color: white;
+    --main-theme-color: coral;
+    --main-font-color: #000000;
+
+    --main-font-size-h1: 40px;
+    --mobile-font-size-h1: 30px;
+
+    --main-font-size-lable: 15px;
+    --mobile-font-size-lable: 13px;
+
+    --main-font-family: 'Roboto', sans-serif;
+    --normal-font-family: 'Open Sans', sans-serif;
+}
+
+.general-form-title {
+    color: var(--main-font-color);
+    font-size: var(--main-font-size-h1);
+    font-family: var(--main-font-family);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-bottom: 2px solid var(--main-theme-color);
+}
+.general-form-title-row {
+    margin-top: 50px;
+}
+.general-form-label {
+    font-size: var(--main-font-size-lable);
+    font-weight: 600;
+    font-family: var(--normal-font-family);
+}
+.general-form-input-text, .general-form-input-text:focus {
+    font-size: var(--main-font-size-lable);
+    font-weight: 500;
+    font-family: var(--normal-font-family);
+    padding: 5px 10px !important;
+    width: 100%;
+    border: 1px solid var(--main-font-color);
+}
+.general-form-input-text-error, .general-form-input-text-error:focus {
+    font-size: var(--main-font-size-lable);
+    font-weight: 500;
+    font-family: var(--normal-font-family);
+    padding: 5px 10px !important;
+    width: 100%;
+    outline: none;
+    border: 1px solid red;
+}
+.general-form-submit {
+    background-color: transparent;
+    border: 2px solid var(--main-theme-color);
+    margin: 15px 0;
+    padding: 5px 20px;
+    color: var(--main-theme-color);
+}
+.general-form-submit:hover {
+    background-color: var(--main-theme-color);
+    margin: 15px 0;
+    padding: 5px 20px;
+    color: white;
+    box-shadow: grey 1px 1px 10px;
+}
+.brand-title {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 45px;
+    color: var(--main-theme-color);
+    margin: 20px;
+}
+.general-form-input-error {
+    color: red;
+    font-size: small;
+    font-weight: 600;
+    position: relative;
+    top: -7px;
+}
+.general-component-msg {
+    font-size: medium;
+    /* border: 1px solid black; */
+    padding: 2px 20px 5px 20px;
+    margin: 0;
+}
+.general-component-msg-succ {
+    border-left: 2px solid green;
+    background-color: #b3ffb3;
+}
+.general-component-msg-fail {
+    border-left: 2px solid red;
+    background-color: #ff9999;
+}
+.general-component-msg-warn {
+    border-left: 2px solid yellow;
+    background-color: #ffff80;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-form-title {        
+        font-size: var(--mobile-font-size);
+        font-weight: 600;
+    }
+    .general-form-title-row {
+        margin-top: 5px;
+    }
+    .general-form-label {
+        font-size: var(--mobile-font-size-lable);
+        font-weight: 500;
+    }
+    .general-form-submit {
+        width: 100%;
+    }
+    
+    .general-form-input-error {
+        color: red;
+        font-size: 10px;
+        font-weight: 500;
+        position: relative;
+        top: -7px;
+    }
+
+}
