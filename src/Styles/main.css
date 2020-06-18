@@ -100,7 +100,7 @@
 
 /* profile */
 .my-profile-icon {
-    font-size: 150px;
+    font-size: 130px;
     border: 1px solid grey;
     border-radius: 50%;
     color: #ffffff;
@@ -116,12 +116,14 @@
 }
 .my-profile-username {
     font-weight: 300;
+    margin: 0 0 10px 0;
 }
 .my-profile-settings-icon {
-    margin-left: 20px;
+    margin-left: 5px;
+    font-size: 20px;
     color: var(--main-theme-color);
     position: relative;
-    top: -5px;
+    top: -4px;
 }
 .my-profile-connection-button {
     width: 30% !important;
@@ -138,6 +140,34 @@
     background-color: transparent;
     border: 2px solid var(--main-theme-color);
     color: #000000;
+}
+.my-profile-username-div, .my-profile-name-div {
+    padding: 0 15px;
+}
+.my-profile-stats {
+    text-align: center;
+    padding: 0;
+}
+.my-profile-stats-section{
+    margin-top: 10px;
+    border-left: 2px solid var(--main-theme-color) !important;
+    padding: 7px 0;
+}
+.my-profile-bio-section{
+    margin-top: 10px;
+    border-left: 2px solid var(--main-theme-color) !important;
+    padding: 0px 0;
+}
+.my-profile-stats-number {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+.my-profile-stats-tag {
+    font-weight: 400;
+}
+.my-profile-bio {
+    margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,5 +206,54 @@
     .my-profile-username-section {
         margin: 0 !important;
     }
-
+    .my-profile-username-div, .my-profile-name-div, .my-profile-connection-div {
+        padding: 0;        
+    }
+    .my-profile-username {
+        font-weight: 100;
+        margin: 2px 0;
+        line-height: 50px;
+    }
+    .my-profile-settings-icon {
+        margin-left: 10px;
+        font-size: 23px;
+        color: var(--main-theme-color);
+        position: relative;
+        top: -2px;        
+    }
+    .my-profile-connection-button{
+        width: 60% !important;
+        height: 28px !important;
+        font-weight: 500;
+        background-color: transparent;
+        border: 1px solid var(--main-theme-color);
+        color: #ffffff;
+    }
+    .my-profile-connection-button-good {
+        width: 60% !important;
+        height: 28px !important;
+        font-weight: 500;
+        background-color: var(--main-theme-color);
+        border: 1px solid var(--main-theme-color);
+        color: #ffffff;
+    }
+    .my-profile-stats-section{
+        margin-top: 14px;
+        border-left: 0px solid var(--main-theme-color) !important;
+        padding: 10px 0;
+    }
+    .my-profile-bio-section{
+        margin-top: 14px;
+        border-left: 0px solid var(--main-theme-color) !important;
+        padding: 10px 0;
+    }
+    .my-profile-stats-number {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .my-profile-stats-tag {
+        font-weight: 400;
+        font-size: 12px;
+    }
 }
