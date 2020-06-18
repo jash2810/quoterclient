@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Axios from 'axios'
 import config from 'react-global-configuration'
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
 
 // import '../App.css'
 import GeneralFormTitle from '../ReusableComponents/GeneralFormTitle'
@@ -225,6 +225,9 @@ class Register extends Component {
 
         return registerFlag
     }
+    triggerLoginPage = () => {
+        this.setState({redirectToLogin: true})
+    }
 
     render() {
         return (
@@ -257,6 +260,12 @@ class Register extends Component {
 
                     <div className="row">
                         <GeneralFormButton col="3" smallcol="12" text="Create Account" onClick={this.register} />
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-12">
+                            <p>Already have an account? <Link to="/login">Login</Link></p>
+                        </div>
                     </div>
                 </div>
                 {this.state.redirectToLogin ? (<Redirect to="/login" />) : (null)}

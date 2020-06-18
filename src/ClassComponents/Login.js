@@ -95,7 +95,7 @@ class Login extends Component {
                         <div className="col-md-4"></div>
                     </div>
                 </div>
-                {this.state.redirectSuccess ? (<Redirect to="/user" />) : (null)}
+                {this.state.redirectSuccess ? (<Redirect to={"/user/"+this.state.username} />) : (null)}
             </Fragment>
         )
     }
