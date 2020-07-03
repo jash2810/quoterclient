@@ -133,6 +133,10 @@
     border: 1px solid var(--main-theme-color);
     color: #ffffff;
 }
+.my-profile-connection-button:hover{
+    background-color: var(--main-theme-color);     
+    color: white;   
+}
 .my-profile-connection-button-good {
     width: 30% !important;
     height: 28px !important;
@@ -168,6 +172,18 @@
 }
 .my-profile-bio {
     margin: 0;
+}
+.footer-search-icon {
+    cursor: pointer;
+}
+.footer-search-icon-active{
+    color: var(--main-theme-color);
+}
+.footer-profile-icon{
+    cursor: pointer;
+}
+.footer-profile-icon-active{
+    color: var(--main-theme-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -222,15 +238,23 @@
         top: -2px;        
     }
     .my-profile-connection-button{
-        width: 60% !important;
+        width: 80% !important;
         height: 28px !important;
         font-weight: 500;
         background-color: transparent;
         border: 1px solid var(--main-theme-color);
         color: #ffffff;
     }
+    .my-profile-connection-button:hover{
+        width: 80% !important;
+        height: 28px !important;
+        font-weight: 500;
+        background-color: var(--main-theme-color);
+        border: 1px solid var(--main-theme-color);
+        color: #ffffff;
+    }
     .my-profile-connection-button-good {
-        width: 60% !important;
+        width: 80% !important;
         height: 28px !important;
         font-weight: 500;
         background-color: var(--main-theme-color);

@@ -3,6 +3,7 @@ import jwt_decode from 'jwt-decode'
 
 
 import MyProfileDetails from './MyProfileComponents/MyProfileDetails';
+import Footer from './Footer';
 
 class MyProfile extends Component {
     constructor(props){
@@ -39,7 +40,7 @@ class MyProfile extends Component {
 
                     
                 </div>
-
+                <Footer activePage={"profile"} />
              </Fragment>
         );
     }

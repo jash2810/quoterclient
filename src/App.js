@@ -6,13 +6,14 @@ import './Styles/main.css'
 
 import MyRoutes from './RoutesComponents/MyRoutes'
 import BrandTitle from './ReusableComponents/BrandTitle';
+import Footer from './ClassComponents/Footer';
 
 class App extends Component { 
   render() {
     return(
       <Router>    
         <BrandTitle title="Quoter" />      
-        <MyRoutes />
+        <MyRoutes />        
       </Router>
     )
   }
